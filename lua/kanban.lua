@@ -7,7 +7,7 @@ M.active = false
 
 function M.setup(options)
 	M.ops = require("kanban.ops").get_ops(options)
-	M.keymap = require("kanban.keymap").keymap
+	M.keymap = require("kanban.keymap_jream").keymap
 	vim.api.nvim_create_user_command("KanbanOpen", function(opts)
 		M.kanban_open(opts.fargs[1])
 	end, {
