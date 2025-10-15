@@ -27,7 +27,7 @@ function M.keymap(buf)
 	vim.keymap.set("n", "G", "<cmd>KanbanMoveBottom<cr>", ops)
 
 	-- Task manager
-	vim.keymap.set("n", "D", "<cmd>KanbanTaskDelete<cr>", ops)
+	vim.keymap.set("n", "Dd", "<cmd>KanbanTaskDelete<cr>", ops)
 	vim.keymap.set("n", "<C-o>", "<cmd>KanbanTaskAdd<cr>", ops)
 	vim.keymap.set("n", "<C-t>", "<cmd>KanbanTaskToggleComplete<cr>", ops)
 
